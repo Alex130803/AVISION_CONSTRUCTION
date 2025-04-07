@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Websites - AVISION360</title>
+  <link rel="stylesheet" href="styles/websites.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="minimal-navbar">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="#blog" class="nav-btn">Blog</a>
+    <a href="#tours" class="nav-btn">360</a>
+  </nav>
+
+  <section class="hero">
+    <div class="background-decoration"></div>
+    <h1 class="glitch">Websites</h1>
+    <p class="subtitle">Creative, powerful, and future-ready digital experiences</p>
+  </section>
+
+  <section class="packages">
+  <!-- STARTER PACKAGE -->
+    <div class="package-card neon-card">
+    <h3><i class="fa-solid fa-seedling"></i> Starter Presence</h3>
+    <p>Perfect for individuals and small businesses launching their digital presence.</p>
+    <ul class="features-list">
+      <li><i class="fa-solid fa-mobile-screen-button"></i> Responsive Design</li>
+      <li><i class="fa-solid fa-magnifying-glass-chart"></i> Basic SEO Setup</li>
+      <li><i class="fa-solid fa-scroll"></i> 1 Page Layout</li>
+      <li><i class="fa-solid fa-envelope"></i> Contact Form</li>
+      <li><i class="fa-solid fa-tablet-screen-button"></i> Mobile Friendly</li>
+      <li><i class="fa-brands fa-google"></i> Google Analytics Setup</li>
+      <li><i class="fa-solid fa-cloud-arrow-up"></i> Hosting Integration</li>
+    </ul>
+    <button class="contact-btn">Contact Us</button>
+    </div>
+  
+  <!-- PROFESSIONAL PACKAGE -->
+    <div class="package-card neon-card">
+    <h3><i class="fa-solid fa-rocket"></i> Professional Brand</h3>
+    <p>Includes everything from Starter Presence plus essential business features.</p>
+    <ul class="features-list">
+      <li><i class="fa-solid fa-mobile-screen-button"></i> Responsive Design</li>
+      <li><i class="fa-solid fa-magnifying-glass-chart"></i> Advanced SEO Tools</li>
+      <li><i class="fa-solid fa-layer-group"></i> Multi-Page Layout</li>
+      <li><i class="fa-solid fa-blog"></i> Blog Integration</li>
+      <li><i class="fa-solid fa-envelope"></i> Enhanced Contact Forms</li>
+      <li><i class="fa-solid fa-globe"></i> Domain & Hosting Support</li>
+      <li><i class="fa-solid fa-envelope-open-text"></i> Newsletter Setup</li>
+    </ul>
+    <button class="contact-btn">Contact Us</button>
+    </div>
+  
+  <!-- FULL EXPERIENCE PACKAGE -->
+    <div class="package-card neon-card">
+    <h3><i class="fa-solid fa-crown"></i> Full Experience</h3>
+    <p>Everything from Professional Brand plus backend systems and business automation.</p>
+    <ul class="features-list">
+      <li><i class="fa-solid fa-mobile-screen-button"></i> All Professional Features</li>
+      <li><i class="fa-solid fa-database"></i> Database & Admin Dashboard</li>
+      <li><i class="fa-solid fa-users"></i> Client Portals</li>
+      <li><i class="fa-solid fa-cart-shopping"></i> eCommerce System</li>
+      <li><i class="fa-solid fa-calendar-days"></i> Appointment Booking</li>
+      <li><i class="fa-solid fa-comments-dollar"></i> CRM & Live Chat</li>
+      <li><i class="fa-solid fa-wand-magic-sparkles"></i> Premium Animations</li>
+    </ul>
+    <button class="contact-btn">Contact Us</button>
+    </div>  
+  
+  </section>
+
+  <section class="features">
+    <h3>What’s included?</h3>
+    <div class="grid">
+      <div class="feature">✔️ Mobile-optimized</div>
+      <div class="feature">✔️ Custom design</div>
+      <div class="feature">✔️ Fast hosting setup</div>
+      <div class="feature">✔️ SEO-ready</div>
+      <div class="feature">✔️ Contact forms</div>
+      <div class="feature">✔️ Admin dashboard</div>
+    </div>
+  </section>
+
+  <div class="wave-transition">
+    <svg viewBox="0 0 1440 320">
+      <path fill="#E9F0FF" fill-opacity="1" d="M0,224L48,202.7C96,181,192,139,288,117.3C384,96,480,96,576,128C672,160,768,224,864,250.7C960,277,1056,267,1152,224C1248,181,1344,107,1392,69.3L1440,32L1440,320L0,320Z"></path>
+    </svg>
+  </div>
+
+  <section id="portfolio-scroll" class="portfolio-section">
+    <h2>Our Portfolio</h2>
+    <p>Check out some of the websites we've crafted</p>
+  
+    <div class="portfolio-scroll">
+      <div class="portfolio-card" data-project="project1">
+        <img src="media/portfolio/CostaMare.png" alt="Rent a Car" />
+        <h3>Rent a Car Company</h3>
+        <button class="learn-more">Learn More</button>
+      </div>
+      <div class="portfolio-card" data-project="project2">
+        <img src="media/portfolio/Electus.png" alt="Sports Management" />
+        <h3>Sports Management</h3>
+        <button class="learn-more">Learn More</button>
+      </div>
+      <div class="portfolio-card" data-project="project3">
+        <img src="media/portfolio/OnTheMove.png" alt="Restaurant" />
+        <h3>Car Detailing</h3>
+        <button class="learn-more">Learn More</button>
+      </div>
+      <div class="portfolio-card" data-project="project4">
+        <img src="media/realestate.png" alt="Real Estate" />
+        <h3>Real Estate</h3>
+        <button class="learn-more">Learn More</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modal -->
+  <div class="modal" id="project-modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modal-img" src="" alt="Project Image" />
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+      <a id="modal-link" href="#" target="_blank">Visit Website</a>
+    </div>
+  </div>
+  
+  
+  <section class="cta">
+    <h2>Let’s build your site together</h2>
+    <a href="mailto:contact@avision360.com" class="btn">Get in touch</a>
+  </section>
+
+  <script src="scripts/website.js"></script>
+
+</body>
+</html>

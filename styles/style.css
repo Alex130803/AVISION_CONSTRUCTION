@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.avision_slogan{
+    text-align: center;
+}
+
+/* Vanta.js Background */
+#vanta-bg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Keeps it behind other content */
+    filter: blur(6px); /* Blurs the entire background */
+}
+
+
+.landing_page {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Logo container */
+#logo-container {
+    position: relative;
+    width: 320px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav ul li:hover ~ #logo-container {
+    top: 30%;
+    transform: translate(-50%, -50%) scale(0.8); /* Moves up & shrinks */
+}
+
+/* Fix logo size */
+#logo-part1,
+#logo-part2 {
+    position: absolute;
+    width: 300px;
+    height: auto;
+}
+
+#logo-part2 {
+    transform: translate(-25px, -30px) !important;
+}
+
+#logo-part1 {
+    transform: translate(-25px, -60px) !important;
+}
+
+/* Navbar - Transparent with Blur */
+.nav {
+    position: fixed; /* Stick to the bottom of the screen */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 40vh;
+    padding: 15px 0;
+    z-index: 100;
+    align-content: center;
+}
+
+/* Ensure navbar text is visible */
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 48px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Improve text visibility */
+.nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black; /* Ensure black text for contrast */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.nav ul li a:hover {
+    color: #4474BA; /* Match theme */
+}
+
+/* Smooth transition effect */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.logo_txt {
+    margin-top: 50px; /* Push text lower */
+    width: 250px;
+    height: auto;
+}
+
+
+  
